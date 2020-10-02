@@ -21,3 +21,37 @@
 body{
   background: #ddd;
 }
+
+.icons{
+  position : fixed;
+  left: 10px;
+  bottom:  10px;
+  display:  flex;
+  height: 50px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.icons > svg{
+  fill:#2c2c2c;
+  transform: scale(1.2);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.active{
+  fill : #00B1EB!important;
+}
+.presentation{
+  transition : all ease-in-out 1s;
+}
+.logo{
+  transform: scale(1.3);
+}
+.btn{
+  align-self: center;
+  width: 300px;
+  max-width: 90%;
+  color : white;
+  transition:  all ease-in-out .3s;
+}
