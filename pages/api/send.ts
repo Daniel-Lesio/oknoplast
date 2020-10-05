@@ -31,13 +31,13 @@ const handler = nc<NextApiRequest, NextApiResponse>()
          
             // send mail with defined transport object
             let info = await transporter.sendMail({
-                from: '"Daniel" <FROM_EMAIL_ADDRESS>', // sender address
-                to: ['lesiewiczsales@gmail.com','gregory@mocio.co','k.wasilewska@oknoplast.com.pl'], // list of receivers
-                subject: "Email Testowy OKNOPLAST", // Subject line
+                from: '"Daniel" <sdas@sasd>', // sender address
+                to: ['testiatsend+bf2c377f4b466a6779e180492e550ef3@googlemail.com'], // list of receivers
+                subject: "Email Testowy OKNOPLAST v.2", // Subject line
                 //text: "Hello world?", // plain text body
                 html: file, // html body
             });
-         
+            
             console.log("Message sent: %s", info.messageId);
         }
          
