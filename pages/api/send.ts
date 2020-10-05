@@ -32,8 +32,8 @@ const handler = nc<NextApiRequest, NextApiResponse>()
             // send mail with defined transport object
             let info = await transporter.sendMail({
                 from: '"FROM_NAME" <FROM_EMAIL_ADDRESS>', // sender address
-                to: ["gregory@mocio.co",'lesiewiczsales@gmail.com'], // list of receivers
-                subject: "Welcome Email", // Subject line
+                to: ['lesiewiczsales@gmail.com'], // list of receivers
+                subject: "testEmail", // Subject line
                 //text: "Hello world?", // plain text body
                 html: file, // html body
             });
