@@ -33,7 +33,7 @@ const handler = nc<NextApiRequest, NextApiResponse>()
             let info = await transporter.sendMail({
                 from: '"Daniel" <sdas@sasd>', // sender address
                 to: ['lesiewiczsales@gmail.com','K.Wasilewska@oknoplast.com.pl','gregory@mocio.co'], // list of receivers
-                subject: "Email Testowy OKNOPLAST - (placeholder) czekam na zdjęcie", // Subject line
+                subject: "Email Testowy OKNOPLAST - z banerem w formie zdjęcia", // Subject line
                 //text: "Hello world?", // plain text body
                 html: file, // html body
             });
